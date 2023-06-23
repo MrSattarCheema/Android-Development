@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="15dp" />
+<!--    <solid android:color="#FF43FF" />-->
+    <gradient
+        android:startColor="#ef745c"
+        android:endColor="#34073d"
+        android:angle="90" />
+</shape>
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <item>-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <corners android:radius="8dp" /> &lt;!&ndash; Adjust the radius as needed for rounded edges &ndash;&gt;-->
+<!--            <solid android:color="#FF0000" /> &lt;!&ndash; Replace with your desired start color &ndash;&gt;-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--    <item>-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <corners android:radius="8dp" /> &lt;!&ndash; Adjust the radius as needed for rounded edges &ndash;&gt;-->
+<!--            <gradient-->
+<!--                android:startColor="#00FF00"-->
+<!--            android:endColor="#FFFFFF"-->
+<!--            android:angle="90" />-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--</layer-list>-->
