@@ -25,12 +25,15 @@ class Adapter(private var activity: Activity,private var items:ArrayList<Country
     }
 
     override fun getView(position: Int, convertView: View?, p2: ViewGroup?): View {
-        val view:View?
-        val viewholder:ViewHolder
-        if(convertView==null){
+        val view:View? //contains the item which getView generates
+        val viewholder:ViewHolder //viewHolder provide meta data about about its place
+        //let viewHolder is a class use to initialize widgets of custom layouts
+        if(convertView==null){ //convertView is for recycling, it is used for convert the view for converting the view from item that
+            //is scrolled out the screen into the newly newly created ones that jumps into the screen. Example scrolling down and seeing new list items
             val inflater=activity?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            view=inflater.inflate(R.layout.list_item,null)
-            viewholder=ViewHolder(view)
+            //Layout inflater is used to get view object which we define in XML layout, it is dynamic usage of creating UI elements
+            view=inflater.inflate(R.layout.list_item,null) //inflate means display and null means return null if it is not present
+            viewholder=ViewHolder(view) //here we are initializing viewHolder by calling viewHolder class
             view?.tag=viewholder
         }
         else{
